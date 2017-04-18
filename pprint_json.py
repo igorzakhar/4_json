@@ -9,11 +9,11 @@ def load_data(filepath):
     return json_data
     
 
-def pretty_print_json(data):
-    formatted_json = json.dumps(data, ensure_ascii=False, sort_keys=True, indent=4)
-
+def pretty_print_json(json_data):
+    formatted_json = json.dumps(json_data, ensure_ascii=False, sort_keys=True, 
+                        indent=4)
     return formatted_json
-
+    
 
 if __name__ == '__main__':
 
